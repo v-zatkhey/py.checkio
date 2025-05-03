@@ -1,6 +1,8 @@
 def is_all_upper(text: str) -> bool:
    return not any(map(lambda i: i.islower(), list(text)))
 
+# def is_all_upper(text: str) -> bool:
+#     return text.upper() == text
 
 print("Example:")
 print(is_all_upper("ALL UPPER"))
