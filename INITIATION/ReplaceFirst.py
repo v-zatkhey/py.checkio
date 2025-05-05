@@ -6,6 +6,9 @@ def replace_first(items: list) -> Iterable:
         items.append(items.pop(0))
     return items
 
+# def replace_first(items: list) -> Iterable:
+#     return items[1:] + items [:1]
+
 
 # These "asserts" are used for self-checking
 print("Example:")
