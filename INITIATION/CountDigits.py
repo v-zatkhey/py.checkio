@@ -1,6 +1,9 @@
 def count_digits(text: str) -> int:
     return sum(map(lambda x: 1 if x.isnumeric() else 0, list(text)))
 
+# def count_digits(text: str) -> int:
+#     return sum(map(str.isdigit, text))
+
 
 print("Example:")
 print(count_digits("hi"))
