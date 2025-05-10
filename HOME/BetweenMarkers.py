@@ -18,6 +18,14 @@ def between_markers(text: str, begin: str, end: str) -> str:
 
     return text[first_smb_id:last_smb_id]
 
+# def between_markers(text: str, begin: str, end: str) -> str:
+#     start = text.find(begin) + len(begin) if begin in text else None
+#     stop = text.find(end) if end in text else None
+#     return text[start:stop]
+
+# def between_markers(txt, begin, end):
+#     a, b, c = txt.find(begin), txt.find(end), len(begin)
+#     return [txt[a+c:b], txt[a+c:], txt[:b], txt][2*(a<0)+(b<0)]
 
 print("Example:")
 print(between_markers("What is >apple<", ">", "<"))
