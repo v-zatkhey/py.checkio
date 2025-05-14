@@ -1,6 +1,8 @@
 def checkio(number: int) -> int:
-    # your code here
-    return 0
+    result = 1
+    for i in list(str(number)):
+        result = result * (1 if int(i)==0 else int(i))
+    return result
 
 
 print("Example:")
